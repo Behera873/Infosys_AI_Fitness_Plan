@@ -1,0 +1,66 @@
+.planner-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg,#eaf3ff,#fdeaff);
+  font-family: Arial, sans-serif;
+}
+
+.planner-form {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.1);
+}
+
+.planner-form input,
+.planner-form select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.planner-form button {
+  grid-column: span 3;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(90deg,#667eea,#38bdf8);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.summary {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.schedule {
+  margin-top: 25px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.exercise-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.exercise-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}

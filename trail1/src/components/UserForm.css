@@ -1,0 +1,86 @@
+/* PAGE BACKGROUND */
+.form-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at 20% 20%, #a5b4fc, transparent 40%),
+    radial-gradient(circle at 80% 30%, #67e8f9, transparent 40%),
+    radial-gradient(circle at 50% 80%, #f0abfc, transparent 40%),
+    linear-gradient(135deg, #eef2ff, #f8fafc);
+  padding: 40px 20px;
+}
+
+/* FORM CARD */
+.form-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 36px 44px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* TITLE */
+.form-card h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+/* GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* INPUTS */
+.form-grid input,
+.form-grid select {
+  padding: 14px 14px;
+  border-radius: 10px;
+  border: 1px solid #c7d2fe;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+/* FULL WIDTH FOR SMALL SCREENS */
+@media (max-width: 520px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOCUS EFFECT */
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 28px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* BUTTON HOVER */
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.4);
+}

@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+openai
+python-dotenv
+motor
+bcrypt
+PyJWT
